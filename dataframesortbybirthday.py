@@ -3,6 +3,7 @@ import pandas as pd
 from datetime import datetime as dt
 
 fake = Faker('en_US') # You can specify a locale, e.g., 'en_US'
+Faker.seed(4321)
 def generate_fake_data(num_records):
     data = []
     for _ in range(num_records):
